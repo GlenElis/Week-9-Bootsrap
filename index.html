@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="./css/styles.css">
+<title>First bootstrap page</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="header d-flex justify-content-between">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary py-3">
+            <div class="container">
+              <a class="navbar-brand" href="#">BROOKLYN PIZZA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+      <!-- Navbar end -->
+
+      <!-- Hero -->
+    <section class="darkBG" id="hero">
+        <div class="container">
+            <div class="text-light d-flex flex-column h-100 justify-content-center">
+                <h1 class="display-1">Brooklyn style <span class="text-primary">pizza</span></h1>
+                <p>Brooklyn, NY has by far <span class="text-primary"><b>the best pizza.</b></span> 
+                    I can say this because that is my birthplace!</p>
+            </div>
+        </div>
+    </section>
+      <!-- Hero end-->
+
+<!-- Pizza ingredients -->
+<section class="generic" id="ingredients">
+    <div class="container">
+        <h2 class="display-5 text-primary  mb-5">THE INGREDIENTS</h2>
+        <div class="row mb-3">
+            <div class="col-8 bg-light">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <p class="lead">Dough, sauce, and cheese are the foundation of a pizza. Gennaro Lombardi, 
+                    a Napoli native, started Lombardi's in New York's Little Italy in 1905. Lombardi made his pizzas in a coal-fired 
+                    oven and sold them for a cent each, a technique that the 100-year-old pizzeria continues to do today.</p>
+                    </div>
+                </div>
+            <div class="col-4">
+                <img src="./img/bkpizza.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pizza ingredients end-->
+
+<!-- Form section -->
+<section id="FORM" class="generic darkBG">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+                    <option selected>How much do you love pizza?</option>
+                    <option value="1">Not at all</option>
+                    <option value="2">Sometimes</option>
+                    <option value="3">It's part of my diet!</option>
+                  </select>  
+            </div>
+        </div>
+    </div>
+</section>   
+<!-- Form end-->
+
+<!-- Table -->
+<section id="table" class="generic darkBG">
+    <div class="container">
+        <h5 class="display-5 text-primary  mb-3">TOP 3 BK PIZZA SHOPS</h5>
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Rome to Brooklyn</td>
+                <td>755 Grand St</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Best Pizza</td>
+                <td>33 Havemeyer St</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Brooklyn Pizza Crew</td>
+                <td>758 Nostrand Ave</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</section>
+
+<!-- Table end -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
+</body>
+</html>
